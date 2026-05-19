@@ -40,7 +40,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-200 gap-4 text-[10px] font-bold uppercase tracking-widest text-stone-500">
-          <p>© 2026 AURA ESSENTIALS</p>
+          <p>© 2025 AURA ESSENTIALS</p>
           <div className="flex gap-5">
             <a href="#" className="hover:text-accent transition-colors" aria-label="Instagram">
               <Instagram className="w-4 h-4" />
