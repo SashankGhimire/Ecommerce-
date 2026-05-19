@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Zap, ShieldCheck, Truck, RotateCcw } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { products } from '../data/products';
 import { ProductCard } from '../components/ui/ProductCard';
 import { motion } from 'motion/react';
-import { cn, formatPrice } from '../utils/utils';
 
 export const Home = () => {
   const featuredProducts = products.filter(p => !p.onSale).slice(0, 4);
-  const trendingProducts = products.filter(p => p.isTrending).slice(0, 4);
 
   return (
     <div className="space-y-0">
@@ -81,8 +79,8 @@ export const Home = () => {
               { name: 'Apparel', img: 'https://images.unsplash.com/photo-1445205170230-053b830c6050?auto=format&fit=crop&q=80&w=800' },
               { name: 'Accessories', img: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800' },
               { name: 'Footwear', img: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=800' },
-            ].map((cat, i) => (
-              <Link key={i} to={`/shop?category=${cat.name}`} className="group relative aspect-square rounded-3xl overflow-hidden shadow-sm">
+            ].map((cat) => (
+              <Link key={cat.name} to={`/shop?category=${cat.name}`} className="group relative aspect-square rounded-3xl overflow-hidden shadow-sm">
                 <img src={cat.img} alt={cat.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
                 <div className="absolute bottom-8 left-8 text-white">

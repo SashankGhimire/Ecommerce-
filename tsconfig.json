@@ -23,4 +23,9 @@
     "allowImportingTsExtensions": true,
     "noEmit": true
   }
+  ,
+  "include": [
+    "src",
+    "global.d.ts"
+  ]
 }
