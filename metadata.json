@@ -1,0 +1,6 @@
+{
+  "name": "MODRN. Lifestyle Store",
+  "description": "A premium modern fashion and lifestyle ecommerce platform featuring minimalist design, smooth animations, and a fully responsive interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
